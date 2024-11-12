@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio MN</title>
+    <!-- Fonte -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@300..700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Progress Bar -->
+    <script src="js/progressebar.min.js"></script>
+    <!--descricao-->
+    <meta
+      name="description"
+      content="Conheça nosso salão de beleza, onde combinamos talento, técnica e paixão para oferecer cortes de cabelo, unhas, tratamentos de pele e serviços de beleza excepcionais. Visite-nos e desfrute de uma experiência de beleza completa e relaxante."
+    />
+    <!--icone-->
+    <link rel="icon" href="scr/img/logo provisoria3.png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <div class="container" id="nav-container">
+        <!-- add essa class -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+          <a class="navbar-brand" href="index.html">
+            <img
+              id="logo"
+              src="scr/img/logo provisoria3.png"
+              alt="logoStudio"
+            /><strong class="special"> Studio MN</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-links"
+            aria-controls="navbar-links"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbar-links"
+          >
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" id="home-menu" href="#">Início</a>
+              <a class="nav-item nav-link" id="about-menu" href="#"
+                >Sobre Nós</a
+              >
+              <a class="nav-item nav-link" id="services-menu" href="#"
+                >Serviços</a
+              >
+              <a class="nav-item nav-link" id="portfolio-menu" href="#"
+                >Projetos</a
+              >
+              <a class="nav-item nav-link" id="contact-menu" href="#"
+                >Contatos</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!--banner-->
+      <div class="container-fluid">
+        <div id="mainSlider">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="scr/img/bannerTeste2.jpg"
+                class="d-block w-100"
+                alt="Corte de cabelo"
+              />
+              <div class="carousel-caption d-md-block">
+                <h2>
+                  Bem-vindo ao <strong class="special"> Studio MN!</strong>
+                </h2>
+                <p>
+                  Oferecemos serviços de corte, coloração, manicure e pedicure
+                  com profissionais qualificados.
+                </p>
+                <a
+                  href="https://api.whatsapp.com/send?phone=5511919158014&text=Quero%20agendar%20meu%20hor%C3%A1rio!"
+                  target="_blank"
+                  class="main-btn"
+                  >Agende um Horário</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sobre a empresa -->
+      <div id="about-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Conheça o<strong> Studio MN</strong></h3>
+            </div>
+            <div class="col-md-6">
+              <img class="img-fluid" src="scr/img/logo provisoria.png" alt="StudioMN" />
+            </div>
+            <div class="col-md-6">
+              <h3 class="about-title">Um salão que cuida do seu bem-estar</h3>
+              <p>
+                Nossos serviços são pensados para atender às necessidades e
+                desejos de cada cliente.
+              </p>
+              <p>
+                Após uma análise do seu perfil, nossos especialistas recomendam
+                os melhores produtos e técnicas para realçar sua beleza.
+              </p>
+              <p>
+                E nossa equipe de designers de unhas e cabelos trabalha para que
+                cada detalhe reflita seu estilo.
+              </p>
+              <p></p>
+              <p>Veja outros diferenciais:</p>
+              <ul id="about-list">
+                <li>
+                  <i class="fas fa-check"></i> Utilização de produtos de alta
+                  qualidade
+                </li>
+                <li><i class="fas fa-check"></i> Ambiente Comfortável</li>
+                <li><i class="fas fa-check"></i> Atendimento personalizado</li>
+                <li>
+                  <i class="fas fa-check"></i> Serviços exclusivos de estética e
+                  bem-estar
+                </li>
+                <li><i class="fas fa-check"></i> Profissionais capacitados</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Serviços da empresa -->
+      <div id="services-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title text-center">Nossas especialidades</h3>
+            </div>
+            <div class="col-md-6 service-box text-center">
+              <i class="fas fa-cut"></i>
+              <h4>Corte de Cabelo</h4>
+              <p>
+                Oferecemos cortes de cabelo modernos e personalizados para todos
+                os estilos.
+              </p>
+            </div>
+            <div class="col-md-6 service-box text-center">
+              <i class="fas fa-paint-brush"></i>
+              <h4>Coloração</h4>
+              <p>
+                Transforme seu visual com nossas opções de coloração de alta
+                qualidade.
+              </p>
+            </div>
+            <div class="col-md-6 service-box text-center">
+              <i class="fas fa-hand-paper"></i>
+              <h4>Manicure</h4>
+              <p>
+                Cuide das suas unhas com nossos serviços de manicure
+                profissionais.
+              </p>
+            </div>
+            <div class="col-md-6 service-box text-center">
+              <i class="fas fa-shoe-prints"></i>
+              <h4>Pedicure</h4>
+              <p>Relaxe e aproveite um tratamento completo para seus pés.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--case de sucesso-->
+      <!-- teste 1
+      <div id="portfolio-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title text-center">Conheça o nosso Trabalho</h3>
+            </div>
+            <div id="portfolio" class="carousel slide" data-ride="carousel">
+              <div id="conteiner">
+                <h4 id="h4-cortes" class="portfolio-title">Cortes</h4>
+                <h4 id="h4-unhas" class="portfolio-title">Unhas</h4>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" id="slide-cortes">
+                  <div class="d-flex justify-content-around">
+                    <div class="portfolio-item text-center">
+                      <img src="scr/img/cabelo13.jpeg" alt="corte1" />
+                      <button class="main-btn">Veja mais</button>
+                    </div>
+                    <div class="portfolio-item text-center">
+                      <img src="scr/img/cabelo12.jpeg" alt="corte2" />
+                      <button class="main-btn">Veja mais</button>
+                    </div>
+                    <div class="portfolio-item text-center">
+                      <img src="scr/img/cabelo3.jpeg" alt="corte3" />
+                      <button class="main-btn">Veja mais</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" id="slide-unhas">
+                  <div class="d-flex justify-content-around">
+                    <div class="portfolio-item text-center">
+                      <img src="scr/img/cabelo13.jpeg" alt="unhas1" />
+                      <button class="main-btn">Veja mais</button>
+                    </div>
+                    <div class="portfolio-item text-center">
+                      <img src="scr/img/cabelo12.jpeg" alt="unhas2" />
+                      <button class="main-btn">Veja mais</button>
+                    </div>
+                    <div class="portfolio-item text-center">
+                      <img src="scr/img/cabelo1.jpeg" alt="unhas3" />
+                      <button class="main-btn">Veja mais</button>
+                    </div>
+                  </div>
+                </div>
+              </div>-->
+      <!--teste1-->
+      <div id="portfolio-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Conheça o nosso Trabalho</h3>
+            </div>
+            <div class="col-md-12" id="filter-btn-box">
+              <button class="main-btn filter-btn active" id="all-btn">
+                Todos
+              </button>
+              <button class="main-btn filter-btn" id="dev-btn">Cortes</button>
+              <button class="main-btn filter-btn" id="dsg-btn">Unhas</button>
+            </div>
+
+            <!-- Galeria de Imagens -->
+            <div class="col-md-4 project-box dev">
+              <img src="scr/img/cabelo1.jpeg" class="img-fluid gallery-img" alt="cabelo1" />
+            </div>
+            <div class="col-md-4 project-box dev">
+              <img src="scr/img/cabelo12.jpeg" class="img-fluid gallery-img" alt="cabelo2" />
+            </div>
+            <div class="col-md-4 project-box dev">
+              <img src="scr/img/cabelo13.jpeg" class="img-fluid gallery-img" alt="cabelo3" />
+            </div>
+            <div class="col-md-4 project-box dsg">
+              <img src="scr/img/cabelo3.jpeg" class="img-fluid gallery-img" alt="unha1" />
+            </div>
+            <div class="col-md-4 project-box dsg">
+              <img src="scr/img/cabelo32.jpeg" class="img-fluid gallery-img" alt="unha2" />
+            </div>
+            <div class="col-md-4 project-box dsg">
+              <img src="scr/img/cabelo1.jpeg" class="img-fluid gallery-img" alt="unha3" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal com Carrossel -->
+      <div
+  class="modal fade"
+  id="imageModal"
+  tabindex="-1"
+  aria-labelledby="imageModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">Galeria de Imagens</h5>
+        
+
+        <!-- Botões de controle (Fullscreen, Zoom, Fechar) -->
+        <div class="d-flex justify-content-end">
+          <button
+            onclick="toggleFullscreen()"
+            class="btn btn-secondary toolbar-button"
+          >
+            <i class="fas fa-expand"></i>
+            <!-- Ícone de tela cheia -->
+          </button>
+          <button
+            onclick="zoomImage()"
+            class="btn btn-secondary toolbar-button"
+          >
+            <i class="fas fa-search-plus"></i>
+            <!-- Ícone de zoom -->
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary toolbar-button "
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <i class="fas fa-times"></i>
+            <!-- Ícone de fechar -->
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <!-- Carrossel dentro do modal -->
+        <div
+          id="modalCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- As imagens são inseridas dinamicamente via JS -->
+          </div>
+
+          <!-- Botões de navegação do carrossel (dentro do corpo) -->
+          <a
+            class="carousel-control-prev"
+            href="#modalCarousel"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#modalCarousel"
+            role="button"
+            data-bs-slide="next"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+      <!-- Call  -->
+      <div id="call-area">
+        <div class="container">
+          <div class="row">
+            <p>Quer agendar sua sessão de beleza?</p>
+            <button class="main-btn" id="call-btn">Agendar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Rodapé -->
+    <div id="contact-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="main-title">Entre em contato conosco</h3>
+          </div>
+          <div class="col-md-6 contact-box contact-box-border">
+            <a
+              href="https://api.whatsapp.com/send?phone=5511919158014&text=Quero%20agendar%20meu%20hor%C3%A1rio!"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+              <p>
+                <span class="contact-tile">Ligue para:</span> (11) 91915-8014
+              </p>
+            </a>
+          </div>
+          <div class="col-md-6 contact-box contact-box-border">
+            <a href="https://www.instagram.com/studiomn24/" target="_blank">
+              <i class="fab fa-instagram"></i>
+              <p><span class="contact-tile">Siga-nos:</span> @studiomn24</p>
+            </a>
+          </div>
+
+          <div class="col-md-6 contact-box contact-box-mobile">
+            <a
+              href="https://www.google.com/maps/dir//R.+Belchior+F%C3%A9lix,+82+-+Jardim+Sao+Luiz,+S%C3%A3o+Paulo+-+SP,+04914-120/@-23.6753361,-46.7481775,19.5z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94ce522780e6637f:0xa7ddaa2f82f87692!2m2!1d-46.7479728!2d-23.6754617?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+            >
+              <i class="fas fa-map-marker-alt"></i>
+              <p>
+                <span class="contact-tile">Venha nos conhecer:</span> Rua
+                Belchor Félix - 82
+              </p>
+            </a>
+          </div>
+          <div class="col-md-6 contact-box">
+            <i class="fas fa-clock"></i>
+            <p class="mlk">
+              <span class="contact-tile">Terça a Domingo:</span> 08:00 - 18:00
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="final" class="container">
+        <div class="row">
+          <div class="col-md-4 footer-column">
+            <h5 class="footer-heading">Direitos Reservados</h5>
+            <p class="footer-text">
+              © 2024 Studio MN. Todos os direitos reservados. A reprodução,
+              distribuição ou modificação de qualquer parte deste site sem a
+              permissão expressa do Studio MN é estritamente proibida.
+            </p>
+            <div class="footer-icons">
+              <a
+                href="https://api.whatsapp.com/send?phone=5511919158014&text=Quero%20agendar%20meu%20hor%C3%A1rio!"
+                target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="https://www.instagram.com/studiomn24/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.google.com/maps/dir//R.+Belchior+F%C3%A9lix,+82+-+Jardim+Sao+Luiz,+S%C3%A3o+Paulo+-+SP,+04914-120/@-23.6753361,-46.7481775,19.5z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94ce522780e6637f:0xa7ddaa2f82f87692!2m2!1d-46.7479728!2d-23.6754617?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+              >
+                <i class="fas fa-map-marker-alt"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-md-4 footer-column">
+            <h5 class="footer-heading">Acesso Rápido</h5>
+            <a class="nav-item nav-link footer-link" id="home-menu" href="#"
+              >Início</a
+            >
+            <a class="nav-item nav-link footer-link" id="about-menu" href="#"
+              >Sobre Nós</a
+            >
+            <a class="nav-item nav-link footer-link" id="services-menu" href="#"
+              >Serviços</a
+            >
+            <a
+              class="nav-item nav-link footer-link"
+              id="portfolio-menu"
+              href="#"
+              >Projetos</a
+            >
+            <a class="nav-item nav-link footer-link" id="contact-menu" href="#"
+              >Contatos</a
+            >
+          </div>
+
+          <div class="col-md-4 footer-column">
+            <h5 class="footer-heading">Entre em contato conosco</h5>
+            <p class="footer-text contac mobile">
+              Estamos preparados para enfrentar desafios e superar expectativas.
+            </p>
+            <div class="contact-buttons">
+              <a
+                href="https://api.whatsapp.com/send?phone=5511962092420"
+                target="_blank"
+                class="contact-button"
+              >
+                <i class="fab fa-whatsapp"></i> (11) 96209-2420
+              </a>
+              <a
+                href="https://www.instagram.com/altreformas"
+                target="_blank"
+                class="contact-button"
+              >
+                <i class="fab fa-instagram"></i> @altreformas
+              </a>
+
+              <a
+                href="https://www.google.com/maps/dir//R.+Belchior+F%C3%A9lix,+82+-+Jardim+Sao+Luiz,+S%C3%A3o+Paulo+-+SP,+04914-120/@-23.6753361,-46.7481775,19.5z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94ce522780e6637f:0xa7ddaa2f82f87692!2m2!1d-46.7479728!2d-23.6754617?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                class="contact-button"
+              >
+                <i class="fas fa-map-marker-alt"></i> Rua Belchor Félix - 82
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-note b">
+            <div class="col text-center">
+              <p class="footer-note">
+                Esse site foi criado e desenvolvido pelo
+                <strong>Studio MN</strong> &copy; 2024
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts do projeto -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
