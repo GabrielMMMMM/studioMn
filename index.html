@@ -31,11 +31,8 @@
     />
 
     <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -55,7 +52,11 @@
       content="Conheça nosso salão de beleza, onde combinamos talento, técnica e paixão para oferecer cortes de cabelo, unhas, tratamentos de pele e serviços de beleza excepcionais. Visite-nos e desfrute de uma experiência de beleza completa e relaxante."
     />
     <!--icone-->
-    <link rel="icon" href="scr/img/logo provisoria3.png" type="image/png" />
+    <link
+      rel="icon"
+      href="scr/img/logo salão fundo transparante.png"
+      type="image/png"
+    />
   </head>
   <body>
     <header>
@@ -63,11 +64,11 @@
         <!-- add essa class -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
           <a class="navbar-brand" href="index.html">
-            <img
-              id="logo"
-              src="scr/img/logo provisoria3.png"
-              alt="logoStudio"
-            /><strong class="special"> Studio MN</strong>
+            <img id="logo" src="scr/img/logo1.jpg" alt="logoStudio" /><strong
+              class="special"
+            >
+              Studio MN</strong
+            >
           </a>
           <button
             class="navbar-toggler"
@@ -90,10 +91,10 @@
                 >Sobre Nós</a
               >
               <a class="nav-item nav-link" id="services-menu" href="#"
-                >Serviços</a
+                >Especialidades</a
               >
               <a class="nav-item nav-link" id="portfolio-menu" href="#"
-                >Projetos</a
+                >Serviços</a
               >
               <a class="nav-item nav-link" id="contact-menu" href="#"
                 >Contatos</a
@@ -142,7 +143,11 @@
               <h3 class="main-title">Conheça o<strong> Studio MN</strong></h3>
             </div>
             <div class="col-md-6">
-              <img class="img-fluid" src="scr/img/logo provisoria.png" alt="StudioMN" />
+              <img
+                class="img-fluid"
+                src="scr/img/sobre a empresa.jpeg"
+                alt="StudioMN"
+              />
             </div>
             <div class="col-md-6">
               <h3 class="about-title">Um salão que cuida do seu bem-estar</h3>
@@ -218,53 +223,6 @@
       </div>
 
       <!--case de sucesso-->
-      <!-- teste 1
-      <div id="portfolio-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h3 class="main-title text-center">Conheça o nosso Trabalho</h3>
-            </div>
-            <div id="portfolio" class="carousel slide" data-ride="carousel">
-              <div id="conteiner">
-                <h4 id="h4-cortes" class="portfolio-title">Cortes</h4>
-                <h4 id="h4-unhas" class="portfolio-title">Unhas</h4>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active" id="slide-cortes">
-                  <div class="d-flex justify-content-around">
-                    <div class="portfolio-item text-center">
-                      <img src="scr/img/cabelo13.jpeg" alt="corte1" />
-                      <button class="main-btn">Veja mais</button>
-                    </div>
-                    <div class="portfolio-item text-center">
-                      <img src="scr/img/cabelo12.jpeg" alt="corte2" />
-                      <button class="main-btn">Veja mais</button>
-                    </div>
-                    <div class="portfolio-item text-center">
-                      <img src="scr/img/cabelo3.jpeg" alt="corte3" />
-                      <button class="main-btn">Veja mais</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item" id="slide-unhas">
-                  <div class="d-flex justify-content-around">
-                    <div class="portfolio-item text-center">
-                      <img src="scr/img/cabelo13.jpeg" alt="unhas1" />
-                      <button class="main-btn">Veja mais</button>
-                    </div>
-                    <div class="portfolio-item text-center">
-                      <img src="scr/img/cabelo12.jpeg" alt="unhas2" />
-                      <button class="main-btn">Veja mais</button>
-                    </div>
-                    <div class="portfolio-item text-center">
-                      <img src="scr/img/cabelo1.jpeg" alt="unhas3" />
-                      <button class="main-btn">Veja mais</button>
-                    </div>
-                  </div>
-                </div>
-              </div>-->
-      <!--teste1-->
       <div id="portfolio-area">
         <div class="container">
           <div class="row">
@@ -281,22 +239,52 @@
 
             <!-- Galeria de Imagens -->
             <div class="col-md-4 project-box dev">
-              <img src="scr/img/cabelo1.jpeg" class="img-fluid gallery-img" alt="cabelo1" />
+              <img
+                src="scr/img/cabelo1ponto1.jpg"
+                class="img-fluid gallery-img"
+                alt="cabelo1"
+                data-group="cabelo1"
+              />
             </div>
             <div class="col-md-4 project-box dev">
-              <img src="scr/img/cabelo12.jpeg" class="img-fluid gallery-img" alt="cabelo2" />
+              <img
+                src="scr/img/cabelo2ponto1.jpg"
+                class="img-fluid gallery-img"
+                alt="cabelo2"
+                data-group="cabelo2"
+              />
             </div>
             <div class="col-md-4 project-box dev">
-              <img src="scr/img/cabelo13.jpeg" class="img-fluid gallery-img" alt="cabelo3" />
+              <img
+                src="scr/img/cabelo3ponto1.jpg"
+                class="img-fluid gallery-img"
+                alt="cabelo3"
+                data-group="cabelo3"
+              />
             </div>
             <div class="col-md-4 project-box dsg">
-              <img src="scr/img/cabelo3.jpeg" class="img-fluid gallery-img" alt="unha1" />
+              <img
+                src="scr/img/unha1.jpg"
+                class="img-fluid gallery-img"
+                alt="unha1"
+                data-group="unha1"
+              />
             </div>
             <div class="col-md-4 project-box dsg">
-              <img src="scr/img/cabelo32.jpeg" class="img-fluid gallery-img" alt="unha2" />
+              <img
+                src="scr/img/unha2.jpg"
+                class="img-fluid gallery-img"
+                alt="unha2"
+                data-group="unha2"
+              />
             </div>
             <div class="col-md-4 project-box dsg">
-              <img src="scr/img/cabelo1.jpeg" class="img-fluid gallery-img" alt="unha3" />
+              <img
+                src="scr/img/unha3.jpg"
+                class="img-fluid gallery-img"
+                alt="unha3"
+                data-group="unha3"
+              />
             </div>
           </div>
         </div>
@@ -304,81 +292,75 @@
 
       <!-- Modal com Carrossel -->
       <div
-  class="modal fade"
-  id="imageModal"
-  tabindex="-1"
-  aria-labelledby="imageModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="imageModalLabel">Galeria de Imagens</h5>
-        
+        class="modal fade"
+        id="imageModal"
+        tabindex="-1"
+        aria-labelledby="imageModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabel">1/10</h5>
 
-        <!-- Botões de controle (Fullscreen, Zoom, Fechar) -->
-        <div class="d-flex justify-content-end">
-          <button
-            onclick="toggleFullscreen()"
-            class="btn btn-secondary toolbar-button"
-          >
-            <i class="fas fa-expand"></i>
-            <!-- Ícone de tela cheia -->
-          </button>
-          <button
-            onclick="zoomImage()"
-            class="btn btn-secondary toolbar-button"
-          >
-            <i class="fas fa-search-plus"></i>
-            <!-- Ícone de zoom -->
-          </button>
-          <button
-            type="button"
-            class="btn btn-secondary toolbar-button "
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
-            <i class="fas fa-times"></i>
-            <!-- Ícone de fechar -->
-          </button>
-        </div>
-      </div>
+              <!-- Botões de controle (Fullscreen, Zoom, Fechar) -->
+              <div class="d-flex justify-content-end">
+                <button
+                  onclick="toggleFullscreen()"
+                  class="btn btn-secondary toolbar-button"
+                >
+                  <i class="fas fa-expand"></i>
+                </button>
+                <button class="btn btn-secondary toolbar-button zoom-btn">
+                  <i class="fas fa-search-plus"></i>
+                </button>
 
-      <div class="modal-body">
-        <!-- Carrossel dentro do modal -->
-        <div
-          id="modalCarousel"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <!-- As imagens são inseridas dinamicamente via JS -->
+                <button
+                  type="button"
+                  class="btn btn-secondary toolbar-button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="modal-body">
+              <div
+                id="modalCarousel"
+                class="carousel slide"
+                data-bs-ride="false"
+              >
+                <div class="carousel-inner">
+                  <!-- As imagens são inseridas dinamicamente via JS -->
+                </div>
+
+                <!-- Botões de navegação do carrossel -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#modalCarousel"
+                  data-bs-slide="prev"
+                  aria-label="Previous"
+                >
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#modalCarousel"
+                  data-bs-slide="next"
+                  aria-label="Next"
+                >
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
           </div>
-
-          <!-- Botões de navegação do carrossel (dentro do corpo) -->
-          <a
-            class="carousel-control-prev"
-            href="#modalCarousel"
-            role="button"
-            data-bs-slide="prev"
-          >
-            <i class="fas fa-chevron-left"></i>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#modalCarousel"
-            role="button"
-            data-bs-slide="next"
-          >
-            <i class="fas fa-chevron-right"></i>
-          </a>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
-      
 
       <!-- Call  -->
       <div id="call-area">
@@ -404,7 +386,8 @@
             >
               <i class="fab fa-whatsapp"></i>
               <p>
-                <span class="contact-tile">Ligue para:</span> (11) 91915-8014
+                <span class="contact-tile">Mande uma Mensagem:</span> (11)
+                91915-8014
               </p>
             </a>
           </div>
@@ -428,10 +411,12 @@
             </a>
           </div>
           <div class="col-md-6 contact-box">
-            <i class="fas fa-clock"></i>
-            <p class="mlk">
-              <span class="contact-tile">Terça a Domingo:</span> 08:00 - 18:00
-            </p>
+            <a href="https://g.co/kgs/v5tBxg9" target="_blank">
+              <i class="fas fa-clock"></i>
+              <p class="mlk">
+                <span class="contact-tile">Terça a Domingo:</span> 08:00 - 18:00
+              </p>
+            </a>
           </div>
         </div>
       </div>
@@ -473,13 +458,13 @@
               >Sobre Nós</a
             >
             <a class="nav-item nav-link footer-link" id="services-menu" href="#"
-              >Serviços</a
+              >Especialidades</a
             >
             <a
               class="nav-item nav-link footer-link"
               id="portfolio-menu"
               href="#"
-              >Projetos</a
+              >Serviços</a
             >
             <a class="nav-item nav-link footer-link" id="contact-menu" href="#"
               >Contatos</a
@@ -493,18 +478,18 @@
             </p>
             <div class="contact-buttons">
               <a
-                href="https://api.whatsapp.com/send?phone=5511962092420"
+                href="https://api.whatsapp.com/send?phone=5511919158014&text=Quero%20agendar%20meu%20hor%C3%A1rio!"
                 target="_blank"
                 class="contact-button"
               >
-                <i class="fab fa-whatsapp"></i> (11) 96209-2420
+                <i class="fab fa-whatsapp"></i> (11) 91915-8014
               </a>
               <a
-                href="https://www.instagram.com/altreformas"
+                href="https://www.instagram.com/studiomn24/"
                 target="_blank"
                 class="contact-button"
               >
-                <i class="fab fa-instagram"></i> @altreformas
+                <i class="fab fa-instagram"></i>@studiomn24
               </a>
 
               <a
@@ -529,6 +514,8 @@
       </div>
     </footer>
     <!-- Scripts do projeto -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="js/script.js"></script>
   </body>
 </html>
